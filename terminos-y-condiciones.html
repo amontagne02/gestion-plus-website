@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-i18n-meta="_terms">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
     />
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="es_LA" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
@@ -17,21 +18,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip_link">Saltar al contenido</a>
 
     <header class="site-header" id="inicio">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html#inicio" aria-label="Inicio Gestion Plus">
+        <a class="brand" href="index.html#inicio" data-i18n-aria="brand_aria" aria-label="Inicio Gestion Plus">
           <img src="assets/logo.png" alt="Gestión Plus" class="logo-img">
-          <span class="brand-text">Gestión Plus</span>
+          <span class="brand-text" data-i18n="brand_text">Gestión Plus</span>
         </a>
-        <nav class="main-nav" aria-label="Navegacion principal">
-          <a href="index.html#servicios">Servicios</a>
-          <a href="index.html#productos">Productos</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#contacto">Contacto</a>
+        <nav class="main-nav" data-i18n-aria="nav_aria" aria-label="Navegacion principal">
+          <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <button id="langToggle" class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma">ES</button>
         </nav>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button class="menu-toggle" data-i18n-aria="menu_toggle_aria" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -42,61 +44,61 @@
     <main id="contenido">
       <section class="section">
         <div class="container reveal legal-content">
-          <h1>Términos y Condiciones</h1>
+          <h1 data-i18n="terms.title">Términos y Condiciones</h1>
 
-          <h2>1. Aceptación de los términos</h2>
-          <p>
+          <h2 data-i18n="terms.s1.title">1. Aceptación de los términos</h2>
+          <p data-i18n="terms.s1.content">
             Al acceder y utilizar este sitio web, usted acepta cumplir con los presentes Términos y Condiciones.
             Si no está de acuerdo con alguno de los puntos aquí descritos, le recomendamos no utilizar este sitio.
           </p>
 
-          <h2>2. Propósito del sitio</h2>
-          <p>
+          <h2 data-i18n="terms.s2.title">2. Propósito del sitio</h2>
+          <p data-i18n="terms.s2.content">
             Este sitio web tiene como objetivo ofrecer información sobre nuestros servicios y herramientas diseñados
             para facilitar la gestión de negocios mediante soluciones automatizadas. El contenido proporcionado es de
             carácter informativo y comercial.
           </p>
 
-          <h2>3. Propiedad intelectual</h2>
-          <p>
+          <h2 data-i18n="terms.s3.title">3. Propiedad intelectual</h2>
+          <p data-i18n="terms.s3.content">
             Todo el contenido presente en este sitio web —incluyendo textos, diseños, logotipos, imágenes, gráficos
             y documentos descargables— es propiedad del equipo desarrollador de Gestión Plus, salvo que se indique lo
             contrario. Queda prohibida su reproducción, distribución o modificación sin autorización previa y por escrito.
           </p>
 
-          <h2>4. Uso permitido del sitio</h2>
-          <p>
+          <h2 data-i18n="terms.s4.title">4. Uso permitido del sitio</h2>
+          <p data-i18n="terms.s4.content">
             Usted se compromete a utilizar este sitio de manera responsable y conforme a la ley. No podrá emplearlo
             para actividades ilícitas, difamatorias o que afecten el funcionamiento del sitio o la reputación del negocio.
           </p>
 
-          <h2>5. Exactitud de la información</h2>
-          <p>
+          <h2 data-i18n="terms.s5.title">5. Exactitud de la información</h2>
+          <p data-i18n="terms.s5.content">
             Nos esforzamos por mantener la información del sitio actualizada y precisa. Sin embargo, no garantizamos
             que los contenidos estén libres de errores o sean completamente exactos. Nos reservamos el derecho de
             modificar o actualizar cualquier información en cualquier momento sin previo aviso.
           </p>
 
-          <h2>6. Enlaces externos</h2>
-          <p>
+          <h2 data-i18n="terms.s6.title">6. Enlaces externos</h2>
+          <p data-i18n="terms.s6.content">
             Este sitio puede incluir enlaces a paginas externas de terceros. No nos responsabilizamos por el contenido,
             políticas o prácticas de dichos sitios, ni por los daños que puedan derivarse de su uso.
           </p>
 
-          <h2>7. Limitación de responsabilidad</h2>
-          <p>
+          <h2 data-i18n="terms.s7.title">7. Limitación de responsabilidad</h2>
+          <p data-i18n="terms.s7.content">
             No nos hacemos responsables de daños directos o indirectos derivados del uso o la imposibilidad de uso de
             este sitio web, ni de la interpretación o aplicación de la informacion contenida en él.
           </p>
 
-          <h2>8. Modificaciones de los términos</h2>
-          <p>
+          <h2 data-i18n="terms.s8.title">8. Modificaciones de los términos</h2>
+          <p data-i18n="terms.s8.content">
             Nos reservamos el derecho de actualizar o modificar estos Términos y Condiciones en cualquier momento.
             Los cambios entrarán en vigor desde su publicación en esta misma página.
           </p>
 
-          <h2>9. Contacto</h2>
-          <p>
+          <h2 data-i18n="terms.s9.title">9. Contacto</h2>
+          <p data-i18n="terms.s9.content">
             Para cualquier duda o consulta relacionada con estos Términos y Condiciones, puede comunicarse con nosotros
             a través de los medios de contacto disponibles en el sitio web.
           </p>
@@ -107,38 +109,41 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-col">
-          <h4>Enlaces Legales</h4>
-          <nav aria-label="Enlaces legales">
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            <a href="politicas-de-privacidad.html">Política de Privacidad</a>
+          <h4 data-i18n="footer.legal_title">Enlaces Legales</h4>
+          <nav data-i18n-aria="footer.legal_aria" aria-label="Enlaces legales">
+            <a href="terminos-y-condiciones.html" data-i18n="footer.legal_terms">Términos y Condiciones</a>
+            <a href="politicas-de-privacidad.html" data-i18n="footer.legal_privacy">Política de Privacidad</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Enlaces de Interes</h4>
-          <nav aria-label="Enlaces de interes">
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#productos">Productos</a>
+          <h4 data-i18n="footer.interest_title">Enlaces de Interés</h4>
+          <nav data-i18n-aria="footer.interest_aria" aria-label="Enlaces de interés">
+            <a href="index.html#servicios" data-i18n="footer.interest_services">Servicios</a>
+            <a href="index.html#productos" data-i18n="footer.interest_products">Productos</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p>Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
+          <h4 data-i18n="footer.contact_title">Contacto</h4>
+          <p data-i18n="footer.contact_desc">Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
         </div>
       </div>
       <div class="container" style="margin-top: 1.2rem; text-align: center;">
-        <p style="font-size: 0.88rem;">2026© Todos los derechos reservados</p>
+        <p style="font-size: 0.88rem;" data-i18n="footer.copyright">2026© Todos los derechos reservados</p>
       </div>
     </footer>
 
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#productos">Productos</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contacto">Contacto</a>
+      <button class="mobile-nav-close" data-i18n-aria="mobile_close_aria" aria-label="Cerrar menú">&times;</button>
+      <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+      <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+      <button class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma" style="margin-top: 1rem;">ES</button>
     </nav>
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+    <script src="i18n/es.js" defer></script>
+    <script src="i18n/en.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

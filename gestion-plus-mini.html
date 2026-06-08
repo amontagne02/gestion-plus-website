@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-i18n-meta="_mini">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,28 +10,40 @@
     />
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="es_LA" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
     <link rel="shortcut icon" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Gestión Plus",
+        "description": "Versión ligera para emprendimientos pequeños con funciones básicas de gestión.",
+        "areaServed": "Latinoamerica",
+        "serviceType": "Automatización de gestión empresarial"
+      }
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip_link">Saltar al contenido</a>
 
     <header class="site-header" id="inicio">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html#inicio" aria-label="Inicio Gestion Plus">
+        <a class="brand" href="index.html#inicio" data-i18n-aria="brand_aria" aria-label="Inicio Gestion Plus">
           <img src="assets/logo.png" alt="Gestión Plus" class="logo-img">
-          <span class="brand-text">Gestión Plus</span>
+          <span class="brand-text" data-i18n="brand_text">Gestión Plus</span>
         </a>
-        <nav class="main-nav" aria-label="Navegacion principal">
-          <a href="index.html#servicios">Servicios</a>
-          <a href="index.html#productos">Productos</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#contacto">Contacto</a>
+        <nav class="main-nav" data-i18n-aria="nav_aria" aria-label="Navegacion principal">
+          <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <button id="langToggle" class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma">ES</button>
         </nav>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button class="menu-toggle" data-i18n-aria="menu_toggle_aria" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -44,13 +56,13 @@
         <div class="container reveal">
           <div class="hero-grid">
             <div class="hero-text">
-              <p class="eyebrow">Versión esencial de Gestión Plus</p>
-              <h1>Gestión Plus Mini</h1>
-              <p class="lead">Gestión Plus Mini es una versión simplificada de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, pensada para negocios que necesitan cubrir las funciones esenciales de control y venta sin incorporar herramientas avanzadas de análisis y gestión interna. Está diseñada para comercios y emprendimientos que buscan orden, rapidez y confiabilidad en su operativa diaria.</p>
-              <p class="lead" style="margin-top: 1rem;">Esta versión se enfoca en el control de inventario y en un sistema de facturación tipo POS que permite registrar productos, procesar ventas de forma ágil, generar facturas con identificadores únicos y almacenar automáticamente cada operación en el historial de ventas. Todo funciona de manera integrada y automatizada, manteniendo la lógica y estabilidad de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
+              <p class="eyebrow" data-i18n="mini.hero.eyebrow">Versión esencial de Gestión Plus</p>
+              <h1 data-i18n="mini.hero.title">Gestión Plus Mini</h1>
+              <p class="lead" data-i18n="mini.hero.description">Gestión Plus Mini es una versión simplificada de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, pensada para negocios que necesitan cubrir las funciones esenciales de control y venta sin incorporar herramientas avanzadas de análisis y gestión interna. Está diseñada para comercios y emprendimientos que buscan orden, rapidez y confiabilidad en su operativa diaria.</p>
+              <p class="lead" style="margin-top: 1rem;" data-i18n="mini.hero.description2">Esta versión se enfoca en el control de inventario y en un sistema de facturación tipo POS que permite registrar productos, procesar ventas de forma ágil, generar facturas con identificadores únicos y almacenar automáticamente cada operación en el historial de ventas. Todo funciona de manera integrada y automatizada, manteniendo la lógica y estabilidad de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
               <div class="hero-cta">
-                <a class="btn btn-primary btn-large" href="index.html#contacto">Solicitar servicio</a>
-                <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=LSFeML7vVHg" target="_blank" rel="noopener">Ver Vídeo</a>
+                <a class="btn btn-primary btn-large" href="index.html#contacto" data-i18n="mini.hero.cta_primary">Solicitar servicio</a>
+                <a class="btn btn-secondary" href="https://www.youtube.com/watch?v=LSFeML7vVHg" target="_blank" rel="noopener" data-i18n="mini.hero.cta_secondary">Ver Vídeo</a>
               </div>
             </div>
             <!-- <div class="hero-video">
@@ -77,7 +89,7 @@
               </div>
             </div> -->
             <div class="video-placeholder" style="max-width: min(100%, 960px); margin-inline: auto; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; border: 1px solid #2a2a2a; background: #0d0d0d; display: flex; align-items: center; justify-content: center;">
-              <p style="color: #a0a0a0; font-size: 1rem; font-weight: 600;">Video en desarrollo</p>
+              <p style="color: #a0a0a0; font-size: 1rem; font-weight: 600;" data-i18n="mini.hero.video_placeholder">Video en desarrollo</p>
             </div>
           </div>
         </div>
@@ -86,15 +98,15 @@
       <section class="section alt">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Público objetivo</p>
-            <h2>¿Para quién es ideal Gestión Plus Mini?</h2>
+            <p class="section-kicker" data-i18n="mini.audience.kicker">Público objetivo</p>
+            <h2 data-i18n="mini.audience.title">¿Para quién es ideal Gestión Plus Mini?</h2>
           </div>
           <div class="legal-content">
             <ul class="feature-list">
-              <li>Negocios pequeños y puntos de venta sencillos</li>
-              <li>Comercios enfocados principalmente en la venta de productos</li>
-              <li>Emprendedores que desean orden y control sin complejidad</li>
-              <li>Negocios que no requieren análisis financieros avanzados</li>
+              <li data-i18n="mini.audience.list1">Negocios pequeños y puntos de venta sencillos</li>
+              <li data-i18n="mini.audience.list2">Comercios enfocados principalmente en la venta de productos</li>
+              <li data-i18n="mini.audience.list3">Emprendedores que desean orden y control sin complejidad</li>
+              <li data-i18n="mini.audience.list4">Negocios que no requieren análisis financieros avanzados</li>
             </ul>
           </div>
         </div>
@@ -103,37 +115,37 @@
       <section class="section">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Comparativa</p>
-            <h2>Diferencias fundamentales</h2>
+            <p class="section-kicker" data-i18n="mini.comparison.kicker">Comparativa</p>
+            <h2 data-i18n="mini.comparison.title">Diferencias fundamentales</h2>
           </div>
           <div class="comparison-wrapper">
             <table class="comparison-table">
               <thead>
                 <tr>
-                  <th><a href="gestion-plus.html" class="accent-link">Gestión Plus</a></th>
-                  <th>Gestión Plus Mini</th>
+                  <th><a href="gestion-plus.html" class="accent-link" data-i18n="mini.comparison.plus_col">Gestión Plus</a></th>
+                  <th data-i18n="mini.comparison.mini_col">Gestión Plus Mini</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Incorpora una gestión integral del negocio</td>
-                  <td>Se enfoca únicamente en inventario y ventas</td>
+                  <td data-i18n="mini.comparison.row1.plus">Incorpora una gestión integral del negocio</td>
+                  <td data-i18n="mini.comparison.row1.mini">Se enfoca únicamente en inventario y ventas</td>
                 </tr>
                 <tr>
-                  <td>Permite registrar gastos, analizar costos y calcular beneficios</td>
-                  <td>No incluye análisis de gastos ni ganancias</td>
+                  <td data-i18n="mini.comparison.row2.plus">Permite registrar gastos, analizar costos y calcular beneficios</td>
+                  <td data-i18n="mini.comparison.row2.mini">No incluye análisis de gastos ni ganancias</td>
                 </tr>
                 <tr>
-                  <td>Incluye cálculo automático de pago a trabajadores</td>
-                  <td>No contempla control de pagos de salarios a trabajadores</td>
+                  <td data-i18n="mini.comparison.row3.plus">Incluye cálculo automático de pago a trabajadores</td>
+                  <td data-i18n="mini.comparison.row3.mini">No contempla control de pagos de salarios a trabajadores</td>
                 </tr>
                 <tr>
-                  <td>Ofrece un Dashboard interactivo con las métricas fundamentales del negocio</td>
-                  <td>No dispone de indicadores ni visualizaciones</td>
+                  <td data-i18n="mini.comparison.row4.plus">Ofrece un Dashboard interactivo con las métricas fundamentales del negocio</td>
+                  <td data-i18n="mini.comparison.row4.mini">No dispone de indicadores ni visualizaciones</td>
                 </tr>
                 <tr>
-                  <td>Ideal para negocios en crecimiento o que requieren control y análisis avanzados</td>
-                  <td>Ideal para negocios pequeños o con procesos simples</td>
+                  <td data-i18n="mini.comparison.row5.plus">Ideal para negocios en crecimiento o que requieren control y análisis avanzados</td>
+                  <td data-i18n="mini.comparison.row5.mini">Ideal para negocios pequeños o con procesos simples</td>
                 </tr>
               </tbody>
             </table>
@@ -143,9 +155,9 @@
 
       <section class="section cta-block">
         <div class="container reveal cta-inner">
-          <h2>Interesado en Gestión Plus Mini?</h2>
-          <p class="text-narrow">Conozca más sobre el sistema base en la página de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
-          <a class="btn btn-primary btn-large" href="index.html#contacto">Solicitar servicio</a>
+          <h2 data-i18n="mini.cta.title">¿Interesado en Gestión Plus Mini?</h2>
+          <p class="text-narrow" data-i18n="mini.cta.desc">Conozca más sobre el sistema base en la página de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
+          <a class="btn btn-primary btn-large" href="index.html#contacto" data-i18n="mini.cta.btn">Solicitar servicio</a>
         </div>
       </section>
     </main>
@@ -153,38 +165,41 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-col">
-          <h4>Enlaces Legales</h4>
-          <nav aria-label="Enlaces legales">
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            <a href="politicas-de-privacidad.html">Política de Privacidad</a>
+          <h4 data-i18n="footer.legal_title">Enlaces Legales</h4>
+          <nav data-i18n-aria="footer.legal_aria" aria-label="Enlaces legales">
+            <a href="terminos-y-condiciones.html" data-i18n="footer.legal_terms">Términos y Condiciones</a>
+            <a href="politicas-de-privacidad.html" data-i18n="footer.legal_privacy">Política de Privacidad</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Enlaces de Interés</h4>
-          <nav aria-label="Enlaces de interes">
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#productos">Productos</a>
+          <h4 data-i18n="footer.interest_title">Enlaces de Interés</h4>
+          <nav data-i18n-aria="footer.interest_aria" aria-label="Enlaces de interés">
+            <a href="index.html#servicios" data-i18n="footer.interest_services">Servicios</a>
+            <a href="index.html#productos" data-i18n="footer.interest_products">Productos</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p>Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
+          <h4 data-i18n="footer.contact_title">Contacto</h4>
+          <p data-i18n="footer.contact_desc">Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
         </div>
       </div>
       <div class="container" style="margin-top: 1.2rem; text-align: center;">
-        <p style="font-size: 0.88rem;">2026© Todos los derechos reservados</p>
+        <p style="font-size: 0.88rem;" data-i18n="footer.copyright">2026© Todos los derechos reservados</p>
       </div>
     </footer>
 
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#productos">Productos</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contacto">Contacto</a>
+      <button class="mobile-nav-close" data-i18n-aria="mobile_close_aria" aria-label="Cerrar menú">&times;</button>
+      <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+      <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+      <button class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma" style="margin-top: 1rem;">ES</button>
     </nav>
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+    <script src="i18n/es.js" defer></script>
+    <script src="i18n/en.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,393 @@
+window.__es = {
+  "_meta": {
+    "title": "Gestión Plus | Automatización empresarial",
+    "description": "Gestión Plus crea sistemas de gestión automatizados para inventario, ventas, gastos, facturación y dashboards empresariales.",
+    "og_description": "Administración automática, simple y sin margen de error para su negocio.",
+    "ld_description": "Herramientas automatizadas de gestión empresarial."
+  },
+  "_meta_gp": {
+    "title": "Gestión Plus | Gestión Plus",
+    "description": "Gestión Plus — Sistema completo de gestión empresarial para inventarios, facturación, ventas, gastos y dashboard.",
+    "ld_description": "Sistema completo de gestión empresarial para inventarios, facturación, ventas, gastos y dashboard."
+  },
+  "_meta_mini": {
+    "title": "Gestión Plus Mini | Gestión Plus",
+    "description": "Gestión Plus Mini — Versión ligera para emprendimientos pequeños con funciones básicas de gestión.",
+    "ld_description": "Versión ligera para emprendimientos pequeños con funciones básicas de gestión."
+  },
+  "_meta_recipes": {
+    "title": "Gestión Plus Recipes | Gestión Plus",
+    "description": "Gestión Plus Recipes — Versión especializada para gastronomía con recetas, costos y control de menú.",
+    "ld_description": "Versión especializada para gastronomía con recetas, costos y control de menú."
+  },
+  "_meta_privacy": {
+    "title": "Políticas de Privacidad | Gestión Plus",
+    "description": "Políticas de Privacidad de Gestión Plus. Conozca cómo protegemos su información personal.",
+    "ld_description": "Políticas de Privacidad de Gestión Plus."
+  },
+  "_meta_terms": {
+    "title": "Términos y Condiciones | Gestión Plus",
+    "description": "Términos y Condiciones de Gestión Plus. Conozca las reglas de uso de nuestro sitio web y servicios.",
+    "ld_description": "Términos y Condiciones de Gestión Plus."
+  },
+  "_lang_toggle_aria": "Cambiar idioma",
+  "skip_link": "Saltar al contenido",
+  "brand_aria": "Inicio Gestión Plus",
+  "brand_text": "Gestión Plus",
+  "nav": {
+    "services": "Servicios",
+    "products": "Productos",
+    "faq": "FAQ",
+    "contact": "Contacto"
+  },
+  "nav_aria": "Navegación principal",
+  "menu_toggle_aria": "Abrir menú",
+  "mobile_close_aria": "Cerrar menú",
+  "hero": {
+    "eyebrow": "Gestión inteligente para crecer con control",
+    "title": "Administración automática, simple y sin margen de error.",
+    "subtitle": "Facilitamos la gestión de su negocio con herramientas automatizadas. Control real de su emprendimiento.",
+    "cta_primary": "Explorar Productos",
+    "cta_secondary": "Conózcanos"
+  },
+  "about": {
+    "kicker": "Misión y pilares",
+    "title": "Una gestión más eficiente, simple y segura para su negocio",
+    "description": "Somos un equipo comprometido en facilitar la gestión empresarial mediante soluciones digitales claras, accesibles y adaptadas a cada operación. Tenemos como misión brindar a cada negocio una forma más sencilla, confiable y accesible de gestionar sus operaciones, eliminando el miedo al error y reduciendo el tiempo invertido en tareas manuales.",
+    "card1": {
+      "title": "Automatización",
+      "desc": "Logre más eficiencia con procesos automatizados que ahorran tiempo y mejoran la fluidez de su gestión."
+    },
+    "card2": {
+      "title": "Simplicidad",
+      "desc": "Disfrute de diseños al alcance de cualquier persona. Interfaz clara, procesos rápidos y sin complicaciones."
+    },
+    "card3": {
+      "title": "Seguridad",
+      "desc": "Olvide el miedo al error. Nuestros sistemas controlan errores y validan cada dato para evitar equivocaciones."
+    }
+  },
+  "services": {
+    "kicker": "Servicios",
+    "title": "Elija el nivel de solución que su negocio necesita hoy",
+    "card1": {
+      "title": "Desarrollo a Medida",
+      "desc": "Diseñamos herramientas de gestión completamente personalizadas según sus procesos y objetivos."
+    },
+    "card2": {
+      "title": "Soluciones Genéricas",
+      "desc": "Sistemas listos para operar con inventario, facturación, ventas, gastos, trabajadores y dashboard."
+    },
+    "card3": {
+      "title": "Optimización de Sistemas",
+      "desc": "Mejoramos y corregimos sistemas existentes cuando ya no responden al ritmo real de su operación."
+    },
+    "card4": {
+      "title": "Soluciones Específicas",
+      "desc": "Programamos macros puntuales que se integran a su sistema actual sin reconstruir desde cero."
+    }
+  },
+  "products": {
+    "kicker": "Productos",
+    "title": "Productos listos para acelerar su control administrativo",
+    "card_mini": {
+      "title": "Gestión Plus Mini",
+      "desc": "Versión ligera para emprendimientos pequeños que requieren funciones básicas con baja complejidad."
+    },
+    "card_plus": {
+      "title": "Gestión Plus",
+      "desc": "Sistema completo de gestión empresarial desarrollado en Excel para inventarios, facturación, ventas, gastos y dashboard estadístico."
+    },
+    "card_recipes": {
+      "title": "Gestión Plus Recipes",
+      "desc": "Versión especializada de Gestión Plus para gastronomía con recetas, costos de producción, ingredientes y control de menú."
+    }
+  },
+  "faq": {
+    "kicker": "Preguntas frecuentes",
+    "title": "Respuestas claras para tomar una decisión segura",
+    "q1": {
+      "question": "¿Cómo puede ayudarme su servicio a mejorar la gestión de mi negocio?",
+      "answer": "Nuestro servicio automatiza procesos clave como control de inventario, registro de ventas y análisis financiero, para que dedique menos tiempo a tareas manuales y más a hacer crecer su negocio con información confiable."
+    },
+    "q2": {
+      "question": "¿Por qué Excel?",
+      "answer": "Porque es una herramienta universal, accesible y conocida. Permite automatizar procesos complejos sin software costoso ni instalaciones adicionales, adaptándose a cualquier tipo de negocio."
+    },
+    "q3": {
+      "question": "¿Sólo usan Excel?",
+      "answer": "No. También estamos desarrollando aplicaciones Web tanto locales como en la nube. Nos adaptamos a lo que necesita su negocio."
+    },
+    "q4": {
+      "question": "¿Necesito conexión a internet?",
+      "answer": "Depende de sus requerimientos. Si necesita servicios que requieran conexiones remotas, aplicaciones multiplataforma, o entornos compartidos seguramente sea necesaria una conexión medianamente estable, pero hay soluciones que no necesitan ningún tipo de conexión y se adaptan muy bien a sus necesidades."
+    }
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Contacto",
+    "description": "Por favor rellene los campos para enviar su solicitud, se le responderá en el menor tiempo posible.",
+    "form": {
+      "name_label": "Nombre",
+      "name_placeholder": "Su nombre",
+      "email_label": "Correo electrónico",
+      "email_placeholder": "Su correo electrónico",
+      "phone_label": "Teléfono",
+      "phone_placeholder": "Su número de teléfono (opcional)",
+      "preferred_via_label": "Vía preferida",
+      "preferred_via_none": "Sin preferencia",
+      "message_label": "Mensaje",
+      "message_placeholder": "Escriba su mensaje",
+      "submit": "Enviar Solicitud",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Su mensaje ha sido enviado correctamente. Nos pondremos en contacto pronto.",
+      "error": "Hubo un problema al enviar el mensaje. Por favor intente de nuevo.",
+      "error_connection": "Hubo un error de conexión. Por favor intente de nuevo."
+    }
+  },
+  "footer": {
+    "legal_title": "Enlaces Legales",
+    "legal_aria": "Enlaces legales",
+    "legal_terms": "Términos y Condiciones",
+    "legal_privacy": "Política de Privacidad",
+    "interest_title": "Enlaces de Interés",
+    "interest_aria": "Enlaces de interés",
+    "interest_services": "Servicios",
+    "interest_products": "Productos",
+    "contact_title": "Contacto",
+    "contact_desc": "Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.",
+    "copyright": "2026© Todos los derechos reservados"
+  },
+  "gp": {
+    "hero": {
+      "eyebrow": "Software de gestión",
+      "title": "Gestión Plus",
+      "description": "Gestión Plus es una herramienta profesional desarrollada en Microsoft Excel que permite administrar todos los aspectos de su negocio de forma automática, simple y sin margen de error. Diseñada especialmente para pequeños y medianos negocios, combina la potencia de las hojas de cálculo con la facilidad de uso de una interfaz intuitiva y completamente automatizada. A diferencia de otros sistemas de gestión, no requiere conexión a internet ni conocimientos avanzados. Todo funciona dentro de un único archivo, totalmente integrado y listo para usar.",
+      "cta_primary": "Solicitar servicio",
+      "cta_secondary": "Ver Vídeo",
+      "video_placeholder": "Video en desarrollo",
+      "video_aria": "Ver vídeo promocional de Gestión Plus en YouTube",
+      "video_alt": "Video promocional de Gestión Plus"
+    },
+    "features": {
+      "kicker": "Características",
+      "title": "Lo que ofrece Gestión Plus",
+      "card1": {
+        "title": "Control de inventario",
+        "desc": "Registre, modifique o elimine productos mediante un formulario automatizado que garantiza la integridad de los datos y evita errores manuales. Cada producto cuenta con un código único autogenerado, precios de costo y venta, y control de cantidades actualizadas en tiempo real."
+      },
+      "card2": {
+        "title": "Sistema de ventas tipo POS",
+        "desc": "Gestione las ventas con un formulario de punto de venta (POS) que agiliza el proceso de facturación. Busque productos al instante, genere facturas automáticas con identificación única por fecha y registre métodos de pago (efectivo, tarjeta o combinado). Cada transacción se guarda automáticamente en el historial de ventas."
+      },
+      "card3": {
+        "title": "Control de Gastos y Ganancias",
+        "desc": "Registre sus costos fijos, variables e inversiones de forma simple y automatizada. El sistema calcula automáticamente el saldo total, las ganancias y los pagos a trabajadores, ofreciendo un panorama claro de la rentabilidad del negocio."
+      },
+      "card4": {
+        "title": "Dashboard interactivo",
+        "desc": "Visualice los resultados de su negocio con gráficos y reportes dinámicos que se actualizan automáticamente. Podrá consultar indicadores como productos más vendidos, total de ingresos, gastos y beneficios netos."
+      }
+    },
+    "benefits": {
+      "kicker": "Beneficios",
+      "title": "Ventajas Clave",
+      "list1": "Automatización total: Todos los cálculos y registros se realizan de forma automática.",
+      "list2": "Simplicidad: No necesita conocimientos avanzados ni conexión a internet.",
+      "list3": "Seguridad: Control total de los datos, sin riesgo de errores manuales.",
+      "list4": "Adaptabilidad: Puede ajustarse a negocios de distintos tipos: tiendas, cafeterías, talleres, entre otros."
+    },
+    "audience": {
+      "kicker": "Para quién",
+      "title": "Ideal para",
+      "list1": "Pequeños y medianos negocios que deseen profesionalizar su gestión.",
+      "list2": "Emprendedores que buscan automatizar tareas sin depender de software costoso o complejo.",
+      "list3": "Negocios con poca o nula conectividad a internet."
+    },
+    "cta": {
+      "title": "¿Interesado en Gestión Plus?",
+      "desc": "Contáctenos para más información.",
+      "btn": "Solicitar servicio"
+    }
+  },
+  "mini": {
+    "hero": {
+      "eyebrow": "Versión esencial de Gestión Plus",
+      "title": "Gestión Plus Mini",
+      "description": "Gestión Plus Mini es una versión simplificada de <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>, pensada para negocios que necesitan cubrir las funciones esenciales de control y venta sin incorporar herramientas avanzadas de análisis y gestión interna. Está diseñada para comercios y emprendimientos que buscan orden, rapidez y confiabilidad en su operativa diaria.",
+      "description2": "Esta versión se enfoca en el control de inventario y en un sistema de facturación tipo POS que permite registrar productos, procesar ventas de forma ágil, generar facturas con identificadores únicos y almacenar automáticamente cada operación en el historial de ventas. Todo funciona de manera integrada y automatizada, manteniendo la lógica y estabilidad de <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>.",
+      "cta_primary": "Solicitar servicio",
+      "cta_secondary": "Ver Vídeo",
+      "video_placeholder": "Video en desarrollo",
+      "video_aria": "Ver vídeo promocional de Gestión Plus Mini en YouTube",
+      "video_alt": "Video promocional de Gestión Plus Mini"
+    },
+    "audience": {
+      "kicker": "Público objetivo",
+      "title": "¿Para quién es ideal Gestión Plus Mini?",
+      "list1": "Negocios pequeños y puntos de venta sencillos",
+      "list2": "Comercios enfocados principalmente en la venta de productos",
+      "list3": "Emprendedores que desean orden y control sin complejidad",
+      "list4": "Negocios que no requieren análisis financieros avanzados"
+    },
+    "comparison": {
+      "kicker": "Comparativa",
+      "title": "Diferencias fundamentales",
+      "plus_col": "Gestión Plus",
+      "mini_col": "Gestión Plus Mini",
+      "row1": {
+        "plus": "Incorpora una gestión integral del negocio",
+        "mini": "Se enfoca únicamente en inventario y ventas"
+      },
+      "row2": {
+        "plus": "Permite registrar gastos, analizar costos y calcular beneficios",
+        "mini": "No incluye análisis de gastos ni ganancias"
+      },
+      "row3": {
+        "plus": "Incluye cálculo automático de pago a trabajadores",
+        "mini": "No contempla control de pagos de salarios a trabajadores"
+      },
+      "row4": {
+        "plus": "Ofrece un Dashboard interactivo con las métricas fundamentales del negocio",
+        "mini": "No dispone de indicadores ni visualizaciones"
+      },
+      "row5": {
+        "plus": "Ideal para negocios en crecimiento o que requieren control y análisis avanzados",
+        "mini": "Ideal para negocios pequeños o con procesos simples"
+      }
+    },
+    "cta": {
+      "title": "¿Interesado en Gestión Plus Mini?",
+      "desc": "Conozca más sobre el sistema base en la página de <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>.",
+      "btn": "Solicitar servicio"
+    }
+  },
+  "recipes": {
+    "hero": {
+      "eyebrow": "Extensión especializada de Gestión Plus",
+      "title": "Gestión Plus Recipes",
+      "description": "Gestión Plus Recipes es una extensión especializada de <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>, creada para negocios que elaboran sus propios productos y necesitan un control real sobre sus recetas, ingredientes y costos de producción. Está pensada para dulcerías, pizzerías y emprendimientos gastronómicos que requieren precisión sin complicaciones.",
+      "description2": "Esta extensión incorpora un sistema inteligente de gestión de ingredientes con control por unidades de medida y conversiones automáticas, junto a un módulo de elaboración de recetas que calcula costos, descuenta materia prima y añade los productos terminados al inventario general, quedando listos para su venta y facturación. Todo funciona de forma integrada, manteniendo un flujo contínuo desde la producción hasta la venta, sin registros manuales ni errores.",
+      "cta_primary": "Solicitar servicio",
+      "cta_secondary": "Ver Vídeo",
+      "video_aria": "Ver vídeo promocional de Gestión Plus Recipes en YouTube",
+      "video_alt": "Vídeo promocional de Gestión Plus Recipes"
+    },
+    "features": {
+      "kicker": "Características",
+      "title": "Características principales",
+      "card1": {
+        "title": "Gestión inteligente de ingredientes",
+        "desc": "Controle su materia prima de forma clara y ordenada. El sistema de gestión de ingredientes le permite registrar, organizar y supervisar su almacén de insumos de manera independiente al inventario de productos finales.",
+        "list1": "Inventario exclusivo para ingredientes",
+        "list2": "Control por peso, volumen o unidades",
+        "list3": "Conversión automática de unidades de medida",
+        "list4": "Eliminación de cálculos manuales y errores comunes",
+        "quote": "Usted se enfoca en producir; el sistema se encarga de las conversiones y el control"
+      },
+      "card2": {
+        "title": "Sistema de elaboración de recetas",
+        "desc": "Defina con precisión cómo se elabora cada producto de su negocio. Gestión Plus Recipes le permite crear recetas detalladas, asociando ingredientes, cantidades y costos reales de producción.",
+        "list1": "Registro de recetas paso a paso",
+        "list2": "Cálculo automático del costo del producto",
+        "list3": "Vinculación directa con el almacén de ingredientes",
+        "list4": "Control exacto de la materia prima utilizada",
+        "quote": "Cada receta se convierte en un proceso controlado, medible y repetible."
+      },
+      "card3": {
+        "title": "Producción conectada al inventario y la facturación",
+        "desc": "Cuando decide elaborar un producto, el sistema hace el trabajo pesado por usted:",
+        "list1": "Descuenta automáticamente los ingredientes utilizados",
+        "list2": "Añade los productos terminados al inventario principal",
+        "list3": "Vincula los productos elaborados con el sistema clásico de facturación y POS",
+        "quote": "El resultado: un flujo completo desde la materia prima hasta la venta, sin registros duplicados ni ajustes manuales."
+      }
+    },
+    "extension": {
+      "title": "Una extensión pensada para crecer con su negocio",
+      "desc1": "Gestión Plus Recipes no reemplaza el sistema anterior: lo potencia.",
+      "desc2": "Funciona como un módulo adicional que se integra de forma natural con <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>, manteniendo la misma filosofía de automatización, simplicidad y control sin margen de error."
+    },
+    "cta": {
+      "title": "¿Interesado en Gestión Plus Recipes?",
+      "desc": "Conozca más sobre el sistema base en la página de <a href=\"gestion-plus.html\" class=\"accent-link\">Gestión Plus</a>.",
+      "btn": "Solicitar servicio"
+    }
+  },
+  "privacy": {
+    "title": "Políticas de Privacidad",
+    "s1": {
+      "title": "1. Introducción",
+      "content": "En Gestión Plus respetamos su privacidad y nos comprometemos a proteger la información personal que pueda proporcionarnos a través de este sitio web. Esta política explica cómo recopilamos, utilizamos y protegemos sus datos."
+    },
+    "s2": {
+      "title": "2. Información que recopilamos",
+      "content": "El sitio recopila únicamente la información personal que usted decide compartir voluntariamente al contactarnos por nuestros medios oficiales, como su nombre, dirección de correo electrónico o número de teléfono. No solicitamos ni almacenamos información financiera ni datos sensibles."
+    },
+    "s3": {
+      "title": "3. Uso de la información",
+      "content1": "Los datos proporcionados se utilizan exclusivamente para responder a sus consultas, ofrecer información sobre nuestros productos o servicios y mantener una comunicación comercial relacionada con su interés.",
+      "content2": "No utilizamos esta información con fines publicitarios ajenos ni la compartimos con terceros."
+    },
+    "s4": {
+      "title": "4. Conservación y protección de los datos",
+      "content": "La información personal se almacena de forma segura y solo durante el tiempo necesario para cumplir con el propósito para el que fue enviada. Implementamos medidas técnicas y organizativas adecuadas para prevenir accesos no autorizados, pérdidas o alteraciones de los datos."
+    },
+    "s5": {
+      "title": "5. Enlaces externos",
+      "content": "Este sitio puede contener enlaces a páginas de terceros. No nos responsabilizamos por las prácticas de privacidad o el contenido de esos sitios externos."
+    },
+    "s6": {
+      "title": "6. Derechos del usuario",
+      "content1": "Usted puede solicitar en cualquier momento la eliminación o modificación de sus datos personales enviando un mensaje a través del formulario de contacto.",
+      "content2": "Atenderemos su solicitud de acuerdo con las normativas de protección de datos aplicables."
+    },
+    "s7": {
+      "title": "7. Actualización de esta política",
+      "content": "Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios se publicarán en esta página con la fecha de actualización correspondiente."
+    },
+    "s8": {
+      "title": "8. Contacto",
+      "content": "Si tiene preguntas o comentarios sobre esta Política de Privacidad, puede comunicarse con nosotros mediante los medios de contacto disponibles en el sitio web."
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "s1": {
+      "title": "1. Aceptación de los términos",
+      "content": "Al acceder y utilizar este sitio web, usted acepta cumplir con los presentes Términos y Condiciones. Si no está de acuerdo con alguno de los puntos aquí descritos, le recomendamos no utilizar este sitio."
+    },
+    "s2": {
+      "title": "2. Propósito del sitio",
+      "content": "Este sitio web tiene como objetivo ofrecer información sobre nuestros servicios y herramientas diseñados para facilitar la gestión de negocios mediante soluciones automatizadas. El contenido proporcionado es de carácter informativo y comercial."
+    },
+    "s3": {
+      "title": "3. Propiedad intelectual",
+      "content": "Todo el contenido presente en este sitio web —incluyendo textos, diseños, logotipos, imágenes, gráficos y documentos descargables— es propiedad del equipo desarrollador de Gestión Plus, salvo que se indique lo contrario. Queda prohibida su reproducción, distribución o modificación sin autorización previa y por escrito."
+    },
+    "s4": {
+      "title": "4. Uso permitido del sitio",
+      "content": "Usted se compromete a utilizar este sitio de manera responsable y conforme a la ley. No podrá emplearlo para actividades ilícitas, difamatorias o que afecten el funcionamiento del sitio o la reputación del negocio."
+    },
+    "s5": {
+      "title": "5. Exactitud de la información",
+      "content": "Nos esforzamos por mantener la información del sitio actualizada y precisa. Sin embargo, no garantizamos que los contenidos estén libres de errores o sean completamente exactos. Nos reservamos el derecho de modificar o actualizar cualquier información en cualquier momento sin previo aviso."
+    },
+    "s6": {
+      "title": "6. Enlaces externos",
+      "content": "Este sitio puede incluir enlaces a páginas externas de terceros. No nos responsabilizamos por el contenido, políticas o prácticas de dichos sitios, ni por los daños que puedan derivarse de su uso."
+    },
+    "s7": {
+      "title": "7. Limitación de responsabilidad",
+      "content": "No nos hacemos responsables de daños directos o indirectos derivados del uso o la imposibilidad de uso de este sitio web, ni de la interpretación o aplicación de la información contenida en él."
+    },
+    "s8": {
+      "title": "8. Modificaciones de los términos",
+      "content": "Nos reservamos el derecho de actualizar o modificar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigor desde su publicación en esta misma página."
+    },
+    "s9": {
+      "title": "9. Contacto",
+      "content": "Para cualquier duda o consulta relacionada con estos Términos y Condiciones, puede comunicarse con nosotros a través de los medios de contacto disponibles en el sitio web."
+    }
+  }
+};

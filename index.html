@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-i18n-meta="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,21 +34,22 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip_link">Saltar al contenido</a>
 
     <header class="site-header" id="inicio">
       <div class="container nav-wrap">
-        <a class="brand" href="#inicio" aria-label="Inicio Gestión Plus">
+        <a class="brand" href="#inicio" data-i18n-aria="brand_aria" aria-label="Inicio Gestión Plus">
           <img src="assets/logo.png" alt="Gestión Plus" class="logo-img">
-          <span class="brand-text">Gestión Plus</span>
+          <span class="brand-text" data-i18n="brand_text">Gestión Plus</span>
         </a>
-        <nav class="main-nav" aria-label="Navegación principal">
-          <a href="#servicios">Servicios</a>
-          <a href="#productos">Productos</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contacto">Contacto</a>
+        <nav class="main-nav" data-i18n-aria="nav_aria" aria-label="Navegación principal">
+          <a href="#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="#productos" data-i18n="nav.products">Productos</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+          <button id="langToggle" class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma">ES</button>
         </nav>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button class="menu-toggle" data-i18n-aria="menu_toggle_aria" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -60,15 +61,15 @@
       <section class="hero section">
         <div class="container hero-grid reveal">
           <div class="hero-copy">
-            <p class="eyebrow">Gestión inteligente para crecer con control</p>
-            <h1>Administración automática, simple y sin margen de error.</h1>
-            <p class="lead">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Gestión inteligente para crecer con control</p>
+            <h1 data-i18n="hero.title">Administración automática, simple y sin margen de error.</h1>
+            <p class="lead" data-i18n="hero.subtitle">
               Facilitamos la gestión de su negocio con herramientas automatizadas.
               Control real de su emprendimiento.
             </p>
             <div class="hero-cta">
-              <a class="btn btn-primary" href="#productos">Explorar Productos</a>
-              <a class="btn btn-secondary" href="#sobre">Conózcanos</a>
+              <a class="btn btn-primary" href="#productos" data-i18n="hero.cta_primary">Explorar Productos</a>
+              <a class="btn btn-secondary" href="#sobre" data-i18n="hero.cta_secondary">Conózcanos</a>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
@@ -108,27 +109,27 @@
       <section class="section alt" id="sobre">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Misión y pilares</p>
-            <h2>Una gestión más eficiente, simple y segura para su negocio</h2>
-            <p class="section-intro">
+            <p class="section-kicker" data-i18n="about.kicker">Misión y pilares</p>
+            <h2 data-i18n="about.title">Una gestión más eficiente, simple y segura para su negocio</h2>
+            <p class="section-intro" data-i18n="about.description">
               Somos un equipo comprometido en facilitar la gestión empresarial mediante soluciones digitales claras, accesibles y adaptadas a cada operación. Tenemos como misión brindar a cada negocio una forma más sencilla, confiable y accesible de gestionar sus operaciones, eliminando el miedo al error y reduciendo el tiempo invertido en tareas manuales.
             </p>
           </div>
           <div class="cards cards-3">
             <article class="card pillar">
               <span class="icon" aria-hidden="true">⚙️</span>
-              <h3>Automatización</h3>
-              <p>Logre más eficiencia con procesos automatizados que ahorran tiempo y mejoran la fluidez de su gestión.</p>
+              <h3 data-i18n="about.card1.title">Automatización</h3>
+              <p data-i18n="about.card1.desc">Logre más eficiencia con procesos automatizados que ahorran tiempo y mejoran la fluidez de su gestión.</p>
             </article>
             <article class="card pillar">
               <span class="icon" aria-hidden="true">✨</span>
-              <h3>Simplicidad</h3>
-              <p>Disfrute de diseños al alcance de cualquier persona. Interfaz clara, procesos rápidos y sin complicaciones.</p>
+              <h3 data-i18n="about.card2.title">Simplicidad</h3>
+              <p data-i18n="about.card2.desc">Disfrute de diseños al alcance de cualquier persona. Interfaz clara, procesos rápidos y sin complicaciones.</p>
             </article>
             <article class="card pillar">
               <span class="icon" aria-hidden="true">🔒</span>
-              <h3>Seguridad</h3>
-              <p>Olvide el miedo al error. Nuestros sistemas controlan errores y validan cada dato para evitar equivocaciones.</p>
+              <h3 data-i18n="about.card3.title">Seguridad</h3>
+              <p data-i18n="about.card3.desc">Olvide el miedo al error. Nuestros sistemas controlan errores y validan cada dato para evitar equivocaciones.</p>
             </article>
           </div>
         </div>
@@ -137,25 +138,25 @@
       <section class="section" id="servicios">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Servicios</p>
-            <h2>Elija el nivel de solución que su negocio necesita hoy</h2>
+            <p class="section-kicker" data-i18n="services.kicker">Servicios</p>
+            <h2 data-i18n="services.title">Elija el nivel de solución que su negocio necesita hoy</h2>
           </div>
           <div class="cards cards-4">
             <article class="card service">
-              <h3>Desarrollo a Medida</h3>
-              <p>Diseñamos herramientas de gestión completamente personalizadas según sus procesos y objetivos.</p>
+              <h3 data-i18n="services.card1.title">Desarrollo a Medida</h3>
+              <p data-i18n="services.card1.desc">Diseñamos herramientas de gestión completamente personalizadas según sus procesos y objetivos.</p>
             </article>
             <article class="card service">
-              <h3>Soluciones Genéricas</h3>
-              <p>Sistemas listos para operar con inventario, facturación, ventas, gastos, trabajadores y dashboard.</p>
+              <h3 data-i18n="services.card2.title">Soluciones Genéricas</h3>
+              <p data-i18n="services.card2.desc">Sistemas listos para operar con inventario, facturación, ventas, gastos, trabajadores y dashboard.</p>
             </article>
             <article class="card service">
-              <h3>Optimización de Sistemas</h3>
-              <p>Mejoramos y corregimos sistemas existentes cuando ya no responden al ritmo real de su operación.</p>
+              <h3 data-i18n="services.card3.title">Optimización de Sistemas</h3>
+              <p data-i18n="services.card3.desc">Mejoramos y corregimos sistemas existentes cuando ya no responden al ritmo real de su operación.</p>
             </article>
             <article class="card service">
-              <h3>Soluciones Específicas</h3>
-              <p>Programamos macros puntuales que se integran a su sistema actual sin reconstruir desde cero.</p>
+              <h3 data-i18n="services.card4.title">Soluciones Específicas</h3>
+              <p data-i18n="services.card4.desc">Programamos macros puntuales que se integran a su sistema actual sin reconstruir desde cero.</p>
             </article>
           </div>
         </div>
@@ -164,27 +165,27 @@
       <section class="section alt" id="productos">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Productos</p>
-            <h2>Productos listos para acelerar su control administrativo</h2>
+            <p class="section-kicker" data-i18n="products.kicker">Productos</p>
+            <h2 data-i18n="products.title">Productos listos para acelerar su control administrativo</h2>
           </div>
           <div class="cards cards-3 products">
             <article class="card product">
               <a href="gestion-plus-mini.html" class="product-link">
-                <span class="badge">Gestión Plus Mini</span>
-                <p>Versión ligera para emprendimientos pequeños que requieren funciones básicas con baja complejidad.</p>
+                <span class="badge" data-i18n="products.card_mini.title">Gestión Plus Mini</span>
+                <p data-i18n="products.card_mini.desc">Versión ligera para emprendimientos pequeños que requieren funciones básicas con baja complejidad.</p>
               </a>
             </article>
             <article class="card product">
               <span class="badge-popular">Popular</span>
               <a href="gestion-plus.html" class="product-link">
-                <span class="badge">Gestión Plus</span>
-                <p>Sistema completo de gestión empresarial desarrollado en Excel para inventarios, facturación, ventas, gastos y dashboard estadístico.</p>
+                <span class="badge" data-i18n="products.card_plus.title">Gestión Plus</span>
+                <p data-i18n="products.card_plus.desc">Sistema completo de gestión empresarial desarrollado en Excel para inventarios, facturación, ventas, gastos y dashboard estadístico.</p>
               </a>
             </article>
             <article class="card product">
               <a href="gestion-plus-recipes.html" class="product-link">
-                <span class="badge">Gestión Plus Recipes</span>
-                <p>Versión especializada de Gestión Plus para gastronomia con recetas, costos de producción, ingredientes y control de menu.</p>
+                <span class="badge" data-i18n="products.card_recipes.title">Gestión Plus Recipes</span>
+                <p data-i18n="products.card_recipes.desc">Versión especializada de Gestión Plus para gastronomia con recetas, costos de producción, ingredientes y control de menu.</p>
               </a>
             </article>
           </div>
@@ -194,19 +195,19 @@
       <section class="section" id="faq">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Preguntas frecuentes</p>
-            <h2>Respuestas claras para tomar una decisión segura</h2>
+            <p class="section-kicker" data-i18n="faq.kicker">Preguntas frecuentes</p>
+            <h2 data-i18n="faq.title">Respuestas claras para tomar una decisión segura</h2>
           </div>
           <div class="faq-list" role="list">
             <article class="faq-item" role="listitem">
               <h3>
                 <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
-                  <span>¿Cómo puede ayudarme su servicio a mejorar la gestión de mi negocio?</span>
+                  <span data-i18n="faq.q1.question">¿Cómo puede ayudarme su servicio a mejorar la gestión de mi negocio?</span>
                   <span class="faq-arrow" aria-hidden="true">▾</span>
                 </button>
               </h3>
               <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1">
-                <p>
+                <p data-i18n="faq.q1.answer">
                   Nuestro servicio automatiza procesos clave como control de inventario, registro de ventas y
                   analisis financiero, para que dedique menos tiempo a tareas manuales y más a hacer crecer su
                   negocio con información confiable.
@@ -216,12 +217,12 @@
             <article class="faq-item" role="listitem">
               <h3>
                 <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
-                  <span>¿Por qué Excel?</span>
+                  <span data-i18n="faq.q2.question">¿Por qué Excel?</span>
                   <span class="faq-arrow" aria-hidden="true">▾</span>
                 </button>
               </h3>
               <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2">
-                <p>
+                <p data-i18n="faq.q2.answer">
                   Porque es una herramienta universal, accesible y conocida. Permiten automatizar procesos
                   complejos sin software costoso ni instalaciones adicionales, adaptándose a cualquier tipo de negocio.
                 </p>
@@ -229,26 +230,26 @@
             </article>
             <article class="faq-item" role="listitem">
               <h3>
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
-                  <span>¿Sólo usan Excel?</span>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
+                  <span data-i18n="faq.q3.question">¿Sólo usan Excel?</span>
                   <span class="faq-arrow" aria-hidden="true">▾</span>
                 </button>
               </h3>
-              <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2">
-                <p>
+              <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3">
+                <p data-i18n="faq.q3.answer">
                   No. También estamos desarrollando aplicaciones Web tanto locales como en la nube. Nos adaptamos a lo que necesita su negocio.
                 </p>
               </div>
             </article>
             <article class="faq-item" role="listitem">
               <h3>
-                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
-                  <span>¿Necesito conexión a internet?</span>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
+                  <span data-i18n="faq.q4.question">¿Necesito conexión a internet?</span>
                   <span class="faq-arrow" aria-hidden="true">▾</span>
                 </button>
               </h3>
-              <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3">
-                <p>
+              <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-btn-4">
+                <p data-i18n="faq.q4.answer">
                   Depende de sus requerimientos. Si necesita servicios que requieran conexiones remotas, aplicaciones multiplataforma, o entornos compartidos seguramente sea necesaria una conexión medianamente estable, pero hay soluciones que no necesitan ningún tipo de conexión y se adaptan muy bien a sus necesidades
                 </p>
               </div>
@@ -260,27 +261,27 @@
       <section class="section alt" id="contacto">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Contacto</p>
-            <h2>Contacto</h2>
-            <p class="section-intro">Por favor rellene los campos para enviar su solicitud, se le responderá en el menor tiempo posible.</p>
+            <p class="section-kicker" data-i18n="contact.kicker">Contacto</p>
+            <h2 data-i18n="contact.title">Contacto</h2>
+            <p class="section-intro" data-i18n="contact.description">Por favor rellene los campos para enviar su solicitud, se le responderá en el menor tiempo posible.</p>
           </div>
           <form class="contact-form" action="https://formspree.io/f/mjgplpqe" method="POST">
             <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Su nombre" required>
+              <label for="nombre" data-i18n="contact.form.name_label">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Su nombre" data-i18n="contact.form.name_placeholder" required>
             </div>
             <div class="form-group">
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" placeholder="Su correo electrónico" required>
+              <label for="email" data-i18n="contact.form.email_label">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Su correo electrónico" data-i18n="contact.form.email_placeholder" required>
             </div>
             <div class="form-group">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="Su número de teléfono (opcional)">
+              <label for="telefono" data-i18n="contact.form.phone_label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Su número de teléfono (opcional)" data-i18n="contact.form.phone_placeholder">
             </div>
             <div class="form-group" id="via-preferida-group" style="display: none;">
-              <label for="via_preferida">Vía preferida</label>
+              <label for="via_preferida" data-i18n="contact.form.preferred_via_label">Vía preferida</label>
               <select id="via_preferida" name="via_preferida">
-                <option value="">Sin preferencia</option>
+                <option value="" data-i18n="contact.form.preferred_via_none">Sin preferencia</option>
                 <option value="SMS">SMS</option>
                 <option value="WhatsApp">WhatsApp</option>
                 <option value="Telegram">Telegram</option>
@@ -288,10 +289,10 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje" rows="5" required></textarea>
+              <label for="mensaje" data-i18n="contact.form.message_label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje" data-i18n="contact.form.message_placeholder" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-large">Enviar Solicitud</button>
+            <button type="submit" class="btn btn-primary btn-large" data-i18n="contact.form.submit">Enviar Solicitud</button>
           </form>
         </div>
       </section>
@@ -300,38 +301,41 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-col">
-          <h4>Enlaces Legales</h4>
-          <nav aria-label="Enlaces legales">
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            <a href="politicas-de-privacidad.html">Política de Privacidad</a>
+          <h4 data-i18n="footer.legal_title">Enlaces Legales</h4>
+          <nav data-i18n-aria="footer.legal_aria" aria-label="Enlaces legales">
+            <a href="terminos-y-condiciones.html" data-i18n="footer.legal_terms">Términos y Condiciones</a>
+            <a href="politicas-de-privacidad.html" data-i18n="footer.legal_privacy">Política de Privacidad</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Enlaces de Interés</h4>
-          <nav aria-label="Enlaces de interes">
-            <a href="#servicios">Servicios</a>
-            <a href="#productos">Productos</a>
+          <h4 data-i18n="footer.interest_title">Enlaces de Interés</h4>
+          <nav data-i18n-aria="footer.interest_aria" aria-label="Enlaces de interés">
+            <a href="#servicios" data-i18n="footer.interest_services">Servicios</a>
+            <a href="#productos" data-i18n="footer.interest_products">Productos</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p>Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
+          <h4 data-i18n="footer.contact_title">Contacto</h4>
+          <p data-i18n="footer.contact_desc">Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
         </div>
       </div>
       <div class="container" style="margin-top: 1.2rem; text-align: center;">
-        <p style="font-size: 0.88rem;">2026© Todos los derechos reservados</p>
+        <p style="font-size: 0.88rem;" data-i18n="footer.copyright">2026© Todos los derechos reservados</p>
       </div>
     </footer>
 
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-      <a href="#servicios">Servicios</a>
-      <a href="#productos">Productos</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacto">Contacto</a>
+      <button class="mobile-nav-close" data-i18n-aria="mobile_close_aria" aria-label="Cerrar menú">&times;</button>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#productos" data-i18n="nav.products">Productos</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <button class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma" style="margin-top: 1rem;">ES</button>
     </nav>
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+    <script src="i18n/es.js" defer></script>
+    <script src="i18n/en.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

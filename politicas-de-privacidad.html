@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-i18n-meta="_privacy">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
     />
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="es_LA" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
@@ -17,21 +18,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip_link">Saltar al contenido</a>
 
     <header class="site-header" id="inicio">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html#inicio" aria-label="Inicio Gestion Plus">
+        <a class="brand" href="index.html#inicio" data-i18n-aria="brand_aria" aria-label="Inicio Gestion Plus">
           <img src="assets/logo.png" alt="Gestión Plus" class="logo-img">
-          <span class="brand-text">Gestión Plus</span>
+          <span class="brand-text" data-i18n="brand_text">Gestión Plus</span>
         </a>
-        <nav class="main-nav" aria-label="Navegacion principal">
-          <a href="index.html#servicios">Servicios</a>
-          <a href="index.html#productos">Productos</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#contacto">Contacto</a>
+        <nav class="main-nav" data-i18n-aria="nav_aria" aria-label="Navegacion principal">
+          <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <button id="langToggle" class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma">ES</button>
         </nav>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button class="menu-toggle" data-i18n-aria="menu_toggle_aria" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -42,61 +44,61 @@
     <main id="contenido">
       <section class="section">
         <div class="container reveal legal-content">
-          <h1>Políticas de Privacidad</h1>
+          <h1 data-i18n="privacy.title">Políticas de Privacidad</h1>
 
-          <h2>1. Introducción</h2>
-          <p>
+          <h2 data-i18n="privacy.s1.title">1. Introducción</h2>
+          <p data-i18n="privacy.s1.content">
             En Gestión Plus respetamos su privacidad y nos comprometemos a proteger la información personal que pueda
             proporcionarnos a través de este sitio web. Esta política explica como recopilamos, utilizamos y protegemos
             sus datos.
           </p>
 
-          <h2>2. Información que recopilamos</h2>
-          <p>
+          <h2 data-i18n="privacy.s2.title">2. Información que recopilamos</h2>
+          <p data-i18n="privacy.s2.content">
             El sitio recopila únicamente la información personal que usted decide compartir voluntariamente al
             contactarnos por nuestros medios oficiales, como su nombre, dirección de correo electrónico o número de
             teléfono. No solicitamos ni almacenamos información financiera ni datos sensibles.
           </p>
 
-          <h2>3. Uso de la información</h2>
-          <p>
+          <h2 data-i18n="privacy.s3.title">3. Uso de la información</h2>
+          <p data-i18n="privacy.s3.content1">
             Los datos proporcionados se utilizan exclusivamente para responder a sus consultas, ofrecer información
             sobre nuestros productos o servicios y mantener una comunicación comercial relacionada con su interés.
           </p>
-          <p>
+          <p data-i18n="privacy.s3.content2">
             No utilizamos esta información con fines publicitarios ajenos ni la compartimos con terceros.
           </p>
 
-          <h2>4. Conservación y protección de los datos</h2>
-          <p>
+          <h2 data-i18n="privacy.s4.title">4. Conservación y protección de los datos</h2>
+          <p data-i18n="privacy.s4.content">
             La información personal se almacena de forma segura y solo durante el tiempo necesario para cumplir con
             el propósito para el que fue enviada. Implementamos medidas técnicas y organizativas adecuadas para
             prevenir accesos no autorizados, pérdidas o alteraciones de los datos.
           </p>
 
-          <h2>5. Enlaces externos</h2>
-          <p>
+          <h2 data-i18n="privacy.s5.title">5. Enlaces externos</h2>
+          <p data-i18n="privacy.s5.content">
             Este sitio puede contener enlaces a páginas de terceros. No nos responsabilizamos por las prácticas de
             privacidad o el contenido de esos sitios externos.
           </p>
 
-          <h2>6. Derechos del usuario</h2>
-          <p>
+          <h2 data-i18n="privacy.s6.title">6. Derechos del usuario</h2>
+          <p data-i18n="privacy.s6.content1">
             Usted puede solicitar en cualquier momento la eliminación o modificación de sus datos personales enviando
             un mensaje a traves del formulario de contacto.
           </p>
-          <p>
+          <p data-i18n="privacy.s6.content2">
             Atenderemos su solicitud de acuerdo con las normativas de protección de datos aplicables.
           </p>
 
-          <h2>7. Actualización de esta política</h2>
-          <p>
+          <h2 data-i18n="privacy.s7.title">7. Actualización de esta política</h2>
+          <p data-i18n="privacy.s7.content">
             Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Los cambios se
             publicarán en esta página con la fecha de actualización correspondiente.
           </p>
 
-          <h2>8. Contacto</h2>
-          <p>
+          <h2 data-i18n="privacy.s8.title">8. Contacto</h2>
+          <p data-i18n="privacy.s8.content">
             Si tiene preguntas o comentarios sobre esta Política de Privacidad, puede comunicarse con nosotros mediante
             los medios de contacto disponibles en el sitio web.
           </p>
@@ -107,38 +109,41 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-col">
-          <h4>Enlaces Legales</h4>
-          <nav aria-label="Enlaces legales">
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            <a href="politicas-de-privacidad.html">Política de Privacidad</a>
+          <h4 data-i18n="footer.legal_title">Enlaces Legales</h4>
+          <nav data-i18n-aria="footer.legal_aria" aria-label="Enlaces legales">
+            <a href="terminos-y-condiciones.html" data-i18n="footer.legal_terms">Términos y Condiciones</a>
+            <a href="politicas-de-privacidad.html" data-i18n="footer.legal_privacy">Política de Privacidad</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Enlaces de Interés</h4>
-          <nav aria-label="Enlaces de interes">
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#productos">Productos</a>
+          <h4 data-i18n="footer.interest_title">Enlaces de Interés</h4>
+          <nav data-i18n-aria="footer.interest_aria" aria-label="Enlaces de interés">
+            <a href="index.html#servicios" data-i18n="footer.interest_services">Servicios</a>
+            <a href="index.html#productos" data-i18n="footer.interest_products">Productos</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p>Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
+          <h4 data-i18n="footer.contact_title">Contacto</h4>
+          <p data-i18n="footer.contact_desc">Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
         </div>
       </div>
       <div class="container" style="margin-top: 1.2rem; text-align: center;">
-        <p style="font-size: 0.88rem;">2026© Todos los derechos reservados</p>
+        <p style="font-size: 0.88rem;" data-i18n="footer.copyright">2026© Todos los derechos reservados</p>
       </div>
     </footer>
 
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#productos">Productos</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contacto">Contacto</a>
+      <button class="mobile-nav-close" data-i18n-aria="mobile_close_aria" aria-label="Cerrar menú">&times;</button>
+      <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+      <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+      <button class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma" style="margin-top: 1rem;">ES</button>
     </nav>
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+    <script src="i18n/es.js" defer></script>
+    <script src="i18n/en.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

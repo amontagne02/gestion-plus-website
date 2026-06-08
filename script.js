@@ -1,3 +1,125 @@
+/* ===== I18n Engine ===== */
+const I18nEngine = {
+  currentLang: 'es',
+  translations: {},
+
+  init() {
+    this.currentLang = localStorage.getItem('gp-lang') || 'es';
+    // Load from global objects set by script tags (works with file://)
+    if (typeof window.__es !== 'undefined' && typeof window.__en !== 'undefined') {
+      this.translations = this.currentLang === 'en' ? window.__en : window.__es;
+      this.applyTranslation();
+    } else {
+      console.warn('[I18nEngine] Translation data not found. Ensure i18n/es.js and i18n/en.js are loaded.');
+    }
+    this.setupToggle();
+  },
+
+  // No loadTranslations needed — data is loaded via <script> tags (works with file://)
+
+  applyTranslation() {
+    // Collect all translation keys used in HTML for debugging
+    const missingKeys = [];
+
+    // Walk all [data-i18n] and replace textContent
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const translation = this.getNestedValue(key);
+      if (!translation) {
+        if (!missingKeys.includes(key)) missingKeys.push(key);
+        return;
+      }
+
+      // Handle different element types
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        if (el.hasAttribute('placeholder')) {
+          el.setAttribute('placeholder', translation);
+        }
+      } else if (el.tagName === 'IMG') {
+        el.setAttribute('alt', translation);
+      } else {
+        el.innerHTML = translation;
+      }
+    });
+
+    // Handle aria-labels (separate from text content)
+    document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+      const key = el.getAttribute('data-i18n-aria');
+      const translation = this.getNestedValue(key);
+      if (translation) el.setAttribute('aria-label', translation);
+    });
+
+    // Log missing keys (visible in browser console)
+    if (missingKeys.length > 0) {
+      console.warn('[I18nEngine] Missing translations for keys:', missingKeys);
+    }
+
+    // Update html lang
+    document.documentElement.lang = this.currentLang === 'en' ? 'en' : 'es';
+
+    // Determine page-specific meta key
+    const metaSuffix = document.documentElement.getAttribute('data-i18n-meta') || '';
+    const pageMeta = this.translations[`_meta${metaSuffix}`];
+
+    // Update meta tags
+    const metaTitle = document.querySelector('title');
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+
+    if (metaTitle && pageMeta?.title) metaTitle.textContent = pageMeta.title;
+    if (metaDesc && pageMeta?.description) metaDesc.setAttribute('content', pageMeta.description);
+    if (ogDesc && pageMeta?.og_description) ogDesc.setAttribute('content', pageMeta.og_description);
+    if (ogLocale) ogLocale.setAttribute('content', this.currentLang === 'en' ? 'en_US' : 'es_LA');
+
+    // Update JSON-LD if present
+    const ld = document.querySelector('script[type="application/ld+json"]');
+    if (ld && pageMeta?.ld_description) {
+      try {
+        const data = JSON.parse(ld.textContent);
+        data.description = pageMeta.ld_description;
+        ld.textContent = JSON.stringify(data);
+      } catch(e) {}
+    }
+
+    // Update toggle buttons text
+    document.querySelectorAll('.lang-toggle').forEach(toggle => {
+      toggle.textContent = this.currentLang === 'en' ? 'ES' : 'EN';
+    });
+  },
+
+  getNestedValue(key) {
+    return key.split('.').reduce((obj, k) => obj?.[k], this.translations);
+  },
+
+  t(key) {
+    return this.getNestedValue(key) || '';
+  },
+
+  setupToggle() {
+    const toggles = document.querySelectorAll('.lang-toggle');
+    if (!toggles.length) return;
+    toggles.forEach(toggle => {
+      toggle.textContent = this.currentLang === 'en' ? 'ES' : 'EN';
+      toggle.addEventListener('click', () => {
+        const newLang = this.currentLang === 'en' ? 'es' : 'en';
+        this.currentLang = newLang;
+        this.translations = newLang === 'en' ? window.__en : window.__es;
+        this.applyTranslation();
+        localStorage.setItem('gp-lang', newLang);
+      });
+    });
+  }
+};
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => I18nEngine.init());
+} else {
+  I18nEngine.init();
+}
+
+/* ===== FAQ Accordion ===== */
 const faqTriggers = document.querySelectorAll('.faq-trigger');
 
 faqTriggers.forEach((trigger) => {
@@ -108,7 +230,7 @@ if (contactForm) {
 
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Enviando...';
+    submitBtn.textContent = I18nEngine.t('contact.form.sending') || 'Enviando...';
     submitBtn.disabled = true;
 
     try {
@@ -125,20 +247,20 @@ if (contactForm) {
 
       if (response.ok) {
         statusDiv.classList.add('success');
-        statusDiv.textContent = '¡Gracias! Su mensaje ha sido enviado correctamente. Nos pondremos en contacto pronto.';
+        statusDiv.textContent = I18nEngine.t('contact.form.success') || '¡Gracias! Su mensaje ha sido enviado correctamente. Nos pondremos en contacto pronto.';
         contactForm.reset();
         if (viaPreferidaGroup) viaPreferidaGroup.style.display = 'none';
       } else {
         statusDiv.classList.add('error');
         const data = await response.json();
-        statusDiv.textContent = data.error || 'Hubo un problema al enviar el mensaje. Por favor intente de nuevo.';
+        statusDiv.textContent = data.error || (I18nEngine.t('contact.form.error') || 'Hubo un problema al enviar el mensaje. Por favor intente de nuevo.');
       }
 
       contactForm.appendChild(statusDiv);
     } catch (error) {
       const statusDiv = document.createElement('div');
       statusDiv.className = 'form-status error';
-      statusDiv.textContent = 'Hubo un error de conexión. Por favor intente de nuevo.';
+      statusDiv.textContent = I18nEngine.t('contact.form.error_connection') || 'Hubo un error de conexión. Por favor intente de nuevo.';
       contactForm.appendChild(statusDiv);
     } finally {
       submitBtn.textContent = originalText;

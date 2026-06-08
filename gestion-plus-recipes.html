@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-i18n-meta="_recipes">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
     />
     <meta name="theme-color" content="#0a0a0a" />
     <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="es_LA" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
@@ -17,21 +18,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip_link">Saltar al contenido</a>
 
     <header class="site-header" id="inicio">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html#inicio" aria-label="Inicio Gestion Plus">
+        <a class="brand" href="index.html#inicio" data-i18n-aria="brand_aria" aria-label="Inicio Gestion Plus">
           <img src="assets/logo.png" alt="Gestión Plus" class="logo-img">
-          <span class="brand-text">Gestión Plus</span>
+          <span class="brand-text" data-i18n="brand_text">Gestión Plus</span>
         </a>
-        <nav class="main-nav" aria-label="Navegacion principal">
-          <a href="index.html#servicios">Servicios</a>
-          <a href="index.html#productos">Productos</a>
-          <a href="index.html#faq">FAQ</a>
-          <a href="index.html#contacto">Contacto</a>
+        <nav class="main-nav" data-i18n-aria="nav_aria" aria-label="Navegacion principal">
+          <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+          <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+          <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+          <button id="langToggle" class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma">ES</button>
         </nav>
-        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <button class="menu-toggle" data-i18n-aria="menu_toggle_aria" aria-label="Abrir menú" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -44,13 +46,13 @@
         <div class="container reveal">
           <div class="hero-grid">
             <div class="hero-text">
-              <p class="eyebrow">Extensión especializada de Gestión Plus</p>
-              <h1>Gestión Plus Recipes</h1>
-              <p class="lead">Gestión Plus Recipes es una extensión especializada de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, creada para negocios que elaboran sus propios productos y necesitan un control real sobre sus recetas, ingredientes y costos de producción. Está pensada para dulcerías, pizzerías y emprendimientos gastronómicos que requieren precisión sin complicaciones.</p>
-              <p class="lead">Esta extensión incorpora un sistema inteligente de gestión de ingredientes con control por unidades de medida y conversiones automáticas, junto a un módulo de elaboración de recetas que calcula costos, descuenta materia prima y añade los productos terminados al inventario general, quedando listos para su venta y facturación. Todo funciona de forma integrada, manteniendo un flujo contínuo desde la producción hasta la venta, sin registros manuales ni errores.</p>
+              <p class="eyebrow" data-i18n="recipes.hero.eyebrow">Extensión especializada de Gestión Plus</p>
+              <h1 data-i18n="recipes.hero.title">Gestión Plus Recipes</h1>
+              <p class="lead" data-i18n="recipes.hero.description">Gestión Plus Recipes es una extensión especializada de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, creada para negocios que elaboran sus propios productos y necesitan un control real sobre sus recetas, ingredientes y costos de producción. Está pensada para dulcerías, pizzerías y emprendimientos gastronómicos que requieren precisión sin complicaciones.</p>
+              <p class="lead" data-i18n="recipes.hero.description2">Esta extensión incorpora un sistema inteligente de gestión de ingredientes con control por unidades de medida y conversiones automáticas, junto a un módulo de elaboración de recetas que calcula costos, descuenta materia prima y añade los productos terminados al inventario general, quedando listos para su venta y facturación. Todo funciona de forma integrada, manteniendo un flujo contínuo desde la producción hasta la venta, sin registros manuales ni errores.</p>
               <div class="hero-cta">
-                <a class="btn btn-primary btn-large" href="index.html#contacto">Solicitar servicio</a>
-                <a class="btn btn-secondary" href="https://youtu.be/L7-EVHpm09s" target="_blank" rel="noopener">Ver Vídeo</a>
+                <a class="btn btn-primary btn-large" href="index.html#contacto" data-i18n="recipes.hero.cta_primary">Solicitar servicio</a>
+                <a class="btn btn-secondary" href="https://youtu.be/L7-EVHpm09s" target="_blank" rel="noopener" data-i18n="recipes.hero.cta_secondary">Ver Vídeo</a>
               </div>
             </div>
             <div class="hero-video">
@@ -60,10 +62,12 @@
                   target="_blank"
                   rel="noopener"
                   class="video-thumbnail"
+                  data-i18n-aria="recipes.hero.video_aria"
                   aria-label="Ver vídeo promocional de Gestión Plus Recipes en YouTube"
                 >
                   <img
                     src="https://img.youtube.com/vi/L7-EVHpm09s/maxresdefault.jpg"
+                    data-i18n="recipes.hero.video_alt"
                     alt="Vídeo promocional de Gestión Plus Recipes"
                     loading="lazy"
                   />
@@ -83,46 +87,46 @@
       <section class="section alt">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <p class="section-kicker">Características</p>
-            <h2>Características principales</h2>
+            <p class="section-kicker" data-i18n="recipes.features.kicker">Características</p>
+            <h2 data-i18n="recipes.features.title">Características principales</h2>
           </div>
 
           <article class="feature-block">
             <span class="icon feature-icon" aria-hidden="true">🧪</span>
-            <h3>Gestión inteligente de ingredientes</h3>
-            <p>Controle su materia prima de forma clara y ordenada. El sistema de gestión de ingredientes le permite registrar, organizar y supervisar su almacén de insumos de manera independiente al inventario de productos finales.</p>
+            <h3 data-i18n="recipes.features.card1.title">Gestión inteligente de ingredientes</h3>
+            <p data-i18n="recipes.features.card1.desc">Controle su materia prima de forma clara y ordenada. El sistema de gestión de ingredientes le permite registrar, organizar y supervisar su almacén de insumos de manera independiente al inventario de productos finales.</p>
             <ul class="feature-list">
-              <li>Inventario exclusivo para ingredientes</li>
-              <li>Control por peso, volumen o unidades</li>
-              <li>Conversión automática de unidades de medida</li>
-              <li>Eliminación de cálculos manuales y errores comunes</li>
+              <li data-i18n="recipes.features.card1.list1">Inventario exclusivo para ingredientes</li>
+              <li data-i18n="recipes.features.card1.list2">Control por peso, volumen o unidades</li>
+              <li data-i18n="recipes.features.card1.list3">Conversión automática de unidades de medida</li>
+              <li data-i18n="recipes.features.card1.list4">Eliminación de cálculos manuales y errores comunes</li>
             </ul>
-            <blockquote class="highlight-quote">Usted se enfoca en producir; el sistema se encarga de las conversiones y el control</blockquote>
+            <blockquote class="highlight-quote" data-i18n="recipes.features.card1.quote">Usted se enfoca en producir; el sistema se encarga de las conversiones y el control</blockquote>
           </article>
 
           <article class="feature-block">
             <span class="icon feature-icon" aria-hidden="true">📋</span>
-            <h3>Sistema de elaboración de recetas</h3>
-            <p>Defina con precisión cómo se elabora cada producto de su negocio. Gestión Plus Recipes le permite crear recetas detalladas, asociando ingredientes, cantidades y costos reales de producción.</p>
+            <h3 data-i18n="recipes.features.card2.title">Sistema de elaboración de recetas</h3>
+            <p data-i18n="recipes.features.card2.desc">Defina con precisión cómo se elabora cada producto de su negocio. Gestión Plus Recipes le permite crear recetas detalladas, asociando ingredientes, cantidades y costos reales de producción.</p>
             <ul class="feature-list">
-              <li>Registro de recetas paso a paso</li>
-              <li>Cálculo automático del costo del producto</li>
-              <li>Vinculación directa con el almacén de ingredientes</li>
-              <li>Control exacto de la materia prima utilizada</li>
+              <li data-i18n="recipes.features.card2.list1">Registro de recetas paso a paso</li>
+              <li data-i18n="recipes.features.card2.list2">Cálculo automático del costo del producto</li>
+              <li data-i18n="recipes.features.card2.list3">Vinculación directa con el almacén de ingredientes</li>
+              <li data-i18n="recipes.features.card2.list4">Control exacto de la materia prima utilizada</li>
             </ul>
-            <blockquote class="highlight-quote">Cada receta se convierte en un proceso controlado, medible y repetible.</blockquote>
+            <blockquote class="highlight-quote" data-i18n="recipes.features.card2.quote">Cada receta se convierte en un proceso controlado, medible y repetible.</blockquote>
           </article>
 
           <article class="feature-block">
             <span class="icon feature-icon" aria-hidden="true">🔄</span>
-            <h3>Producción conectada al inventario y la facturación</h3>
-            <p>Cuando decide elaborar un producto, el sistema hace el trabajo pesado por usted:</p>
+            <h3 data-i18n="recipes.features.card3.title">Producción conectada al inventario y la facturación</h3>
+            <p data-i18n="recipes.features.card3.desc">Cuando decide elaborar un producto, el sistema hace el trabajo pesado por usted:</p>
             <ul class="feature-list">
-              <li>Descuenta automáticamente los ingredientes utilizados</li>
-              <li>Añade los productos terminados al inventario principal</li>
-              <li>Vincula los productos elaborados con el sistema clásico de facturación y POS</li>
+              <li data-i18n="recipes.features.card3.list1">Descuenta automáticamente los ingredientes utilizados</li>
+              <li data-i18n="recipes.features.card3.list2">Añade los productos terminados al inventario principal</li>
+              <li data-i18n="recipes.features.card3.list3">Vincula los productos elaborados con el sistema clásico de facturación y POS</li>
             </ul>
-            <blockquote class="highlight-quote">El resultado: un flujo completo desde la materia prima hasta la venta, sin registros duplicados ni ajustes manuales.</blockquote>
+            <blockquote class="highlight-quote" data-i18n="recipes.features.card3.quote">El resultado: un flujo completo desde la materia prima hasta la venta, sin registros duplicados ni ajustes manuales.</blockquote>
           </article>
         </div>
       </section>
@@ -130,20 +134,20 @@
       <section class="section">
         <div class="container reveal">
           <div class="text-center-narrow">
-            <h2>Una extensión pensada para crecer con su negocio</h2>
+            <h2 data-i18n="recipes.extension.title">Una extensión pensada para crecer con su negocio</h2>
           </div>
           <div class="legal-content">
-            <p>Gestión Plus Recipes no reemplaza el sistema anterior: lo potencia.</p>
-            <p>Funciona como un módulo adicional que se integra de forma natural con <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, manteniendo la misma filosofia de automatización, simplicidad y control sin margen de error.</p>
+            <p data-i18n="recipes.extension.desc1">Gestión Plus Recipes no reemplaza el sistema anterior: lo potencia.</p>
+            <p data-i18n="recipes.extension.desc2">Funciona como un módulo adicional que se integra de forma natural con <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>, manteniendo la misma filosofía de automatización, simplicidad y control sin margen de error.</p>
           </div>
         </div>
       </section>
 
       <section class="section cta-block">
         <div class="container reveal cta-inner">
-          <h2>Interesado en Gestión Plus Recipes?</h2>
-          <p class="text-narrow">Conozca más sobre el sistema base en la página de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
-          <a class="btn btn-primary btn-large" href="index.html#contacto">Solicitar servicio</a>
+          <h2 data-i18n="recipes.cta.title">¿Interesado en Gestión Plus Recipes?</h2>
+          <p class="text-narrow" data-i18n="recipes.cta.desc">Conozca más sobre el sistema base en la página de <a href="gestion-plus.html" class="accent-link">Gestión Plus</a>.</p>
+          <a class="btn btn-primary btn-large" href="index.html#contacto" data-i18n="recipes.cta.btn">Solicitar servicio</a>
         </div>
       </section>
     </main>
@@ -151,38 +155,41 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-col">
-          <h4>Enlaces Legales</h4>
-          <nav aria-label="Enlaces legales">
-            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
-            <a href="politicas-de-privacidad.html">Política de Privacidad</a>
+          <h4 data-i18n="footer.legal_title">Enlaces Legales</h4>
+          <nav data-i18n-aria="footer.legal_aria" aria-label="Enlaces legales">
+            <a href="terminos-y-condiciones.html" data-i18n="footer.legal_terms">Términos y Condiciones</a>
+            <a href="politicas-de-privacidad.html" data-i18n="footer.legal_privacy">Política de Privacidad</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Enlaces de Interés</h4>
-          <nav aria-label="Enlaces de interes">
-            <a href="index.html#servicios">Servicios</a>
-            <a href="index.html#productos">Productos</a>
+          <h4 data-i18n="footer.interest_title">Enlaces de Interés</h4>
+          <nav data-i18n-aria="footer.interest_aria" aria-label="Enlaces de interés">
+            <a href="index.html#servicios" data-i18n="footer.interest_services">Servicios</a>
+            <a href="index.html#productos" data-i18n="footer.interest_products">Productos</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h4>Contacto</h4>
-          <p>Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
+          <h4 data-i18n="footer.contact_title">Contacto</h4>
+          <p data-i18n="footer.contact_desc">Solicite su servicio mediante nuestros medios oficiales disponibles en la página de contacto.</p>
         </div>
       </div>
       <div class="container" style="margin-top: 1.2rem; text-align: center;">
-        <p style="font-size: 0.88rem;">2026© Todos los derechos reservados</p>
+        <p style="font-size: 0.88rem;" data-i18n="footer.copyright">2026© Todos los derechos reservados</p>
       </div>
     </footer>
 
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <button class="mobile-nav-close" aria-label="Cerrar menú">&times;</button>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#productos">Productos</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contacto">Contacto</a>
+      <button class="mobile-nav-close" data-i18n-aria="mobile_close_aria" aria-label="Cerrar menú">&times;</button>
+      <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="index.html#productos" data-i18n="nav.products">Productos</a>
+      <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+      <button class="lang-toggle" data-i18n-aria="_lang_toggle_aria" aria-label="Cambiar idioma" style="margin-top: 1rem;">ES</button>
     </nav>
     <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
+    <script src="i18n/es.js" defer></script>
+    <script src="i18n/en.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>

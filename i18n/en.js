@@ -87,6 +87,12 @@ window.__en = {
       "desc": "We program specific macros that integrate into your current system without rebuilding from scratch."
     }
   },
+  "home_video": {
+    "kicker": "Promotional video",
+    "title": "See how we can transform your business management",
+    "aria": "Watch Gestión Plus promotional video on YouTube",
+    "alt": "Gestión Plus promotional video"
+  },
   "products": {
     "kicker": "Products",
     "title": "Ready-to-use products to accelerate your administrative control",

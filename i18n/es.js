@@ -87,6 +87,12 @@ window.__es = {
       "desc": "Programamos macros puntuales que se integran a su sistema actual sin reconstruir desde cero."
     }
   },
+  "home_video": {
+    "kicker": "Video promocional",
+    "title": "Vea cómo podemos transformar su gestión",
+    "aria": "Ver video promocional de Gestión Plus en YouTube",
+    "alt": "Video promocional de Gestión Plus"
+  },
   "products": {
     "kicker": "Productos",
     "title": "Productos listos para acelerar su control administrativo",

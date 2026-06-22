@@ -69,22 +69,18 @@ window.__en = {
   },
   "services": {
     "kicker": "Services",
-    "title": "Choose the level of solution your business needs today",
+    "title": "Solutions designed to drive your business forward",
     "card1": {
       "title": "Custom Development",
-      "desc": "We design fully personalized management tools according to your processes and objectives."
+      "desc": "We create management tools tailored to your business's real processes and needs."
     },
     "card2": {
-      "title": "Generic Solutions",
-      "desc": "Ready-to-use systems for inventory, invoicing, sales, expenses, workers and dashboard."
+      "title": "Ready-to-Use Solutions",
+      "desc": "Pre-built systems to manage inventory, sales, invoicing and other key tasks in a simple, organized way."
     },
     "card3": {
-      "title": "System Optimization",
-      "desc": "We improve and fix existing systems when they no longer keep up with the real pace of your operation."
-    },
-    "card4": {
-      "title": "Specific Solutions",
-      "desc": "We program specific macros that integrate into your current system without rebuilding from scratch."
+      "title": "Custom Websites",
+      "desc": "We design modern, functional websites to help you present your business with a professional online image."
     }
   },
   "home_video": {

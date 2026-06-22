@@ -69,22 +69,18 @@ window.__es = {
   },
   "services": {
     "kicker": "Servicios",
-    "title": "Elija el nivel de solución que su negocio necesita hoy",
+    "title": "Soluciones pensadas para impulsar su negocio",
     "card1": {
       "title": "Desarrollo a Medida",
-      "desc": "Diseñamos herramientas de gestión completamente personalizadas según sus procesos y objetivos."
+      "desc": "Creamos herramientas de gestión adaptadas a los procesos y necesidades reales de su negocio."
     },
     "card2": {
-      "title": "Soluciones Genéricas",
-      "desc": "Sistemas listos para operar con inventario, facturación, ventas, gastos, trabajadores y dashboard."
+      "title": "Soluciones Listas para Usar",
+      "desc": "Sistemas preparados para controlar inventario, ventas, facturación y otras tareas clave de forma simple y organizada."
     },
     "card3": {
-      "title": "Optimización de Sistemas",
-      "desc": "Mejoramos y corregimos sistemas existentes cuando ya no responden al ritmo real de su operación."
-    },
-    "card4": {
-      "title": "Soluciones Específicas",
-      "desc": "Programamos macros puntuales que se integran a su sistema actual sin reconstruir desde cero."
+      "title": "Sitios Web Personalizados",
+      "desc": "Diseñamos páginas web modernas y funcionales para ayudarle a presentar su negocio con una imagen profesional en internet."
     }
   },
   "home_video": {

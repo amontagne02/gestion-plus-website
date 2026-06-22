@@ -295,6 +295,85 @@ p {
   font-size: 0.96rem;
 }
 
+/* ── Service cards (homepage) ── */
+.services-grid {
+  --service-glow: rgba(255, 99, 0, 0.08);
+  gap: 1.25rem;
+}
+
+.services-grid .service {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-color: rgba(42, 42, 42, 0.8);
+  background: linear-gradient(175deg, #1d1d1d, #161616);
+  overflow: hidden;
+}
+
+.services-grid .service::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, var(--service-glow), transparent 70%);
+  pointer-events: none;
+}
+
+.services-grid .service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: width 300ms ease, opacity 300ms ease;
+}
+
+.services-grid .service:hover::after {
+  width: 80%;
+  opacity: 1;
+}
+
+.services-grid .service:hover {
+  border-color: rgba(255, 99, 0, 0.35);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(255, 99, 0, 0.12);
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 99, 0, 0.1);
+  border: 1px solid rgba(255, 99, 0, 0.2);
+  margin-bottom: 1rem;
+  transition: transform 300ms ease, background 300ms ease, border-color 300ms ease;
+}
+
+.services-grid .service:hover .service-icon {
+  transform: scale(1.1);
+  background: rgba(255, 99, 0, 0.18);
+  border-color: rgba(255, 99, 0, 0.4);
+}
+
+.services-grid .service h3 {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+.services-grid .service p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  position: relative;
+}
+
 .icon {
   font-size: 1.4rem;
   margin-bottom: 0.45rem;

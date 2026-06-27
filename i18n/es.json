@@ -112,7 +112,7 @@
     },
     "q2": {
       "question": "¿Por qué Excel?",
-      "answer": "Porque es una herramienta universal, accesible y conocida. Permite automatizar procesos complejos sin software costoso ni instalaciones adicionales, adaptándose a cualquier tipo de negocio."
+      "answer": "Porque es una herramienta universal, accesible y conocida. Permite automatizar procesos complejos sin software costoso ni instalaciones adicionales, adaptándose a cualquier tipo de negocio. Además es uno de los softwares certificados en Cuba para llevar la contabilidad legalmente."
     },
     "q3": {
       "question": "¿Sólo usan Excel?",
@@ -120,7 +120,7 @@
     },
     "q4": {
       "question": "¿Necesito conexión a internet?",
-      "answer": "Depende de sus requerimientos. Si necesita servicios que requieran conexiones remotas, aplicaciones multiplataforma, o entornos compartidos seguramente sea necesaria una conexión medianamente estable, pero hay soluciones que no necesitan ningún tipo de conexión y se adaptan muy bien a sus necesidades."
+      "answer": "Nuestras herramientas han sido pensadas y desarrolladas para resistir los problemas de conexión. La mayoría de las funcionalidades están disponibles sin necesidad de internet. Sin embargo, en casos específicos donde usted necesite sincronizaciones entre varios dispositivos, datos centralizados o servicios de nube, sí se requeriría acceso a la red."
     }
   },
   "contact": {

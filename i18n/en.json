@@ -112,7 +112,7 @@
     },
     "q2": {
       "question": "Why Excel?",
-      "answer": "Because it is a universal, accessible and well-known tool. It allows automating complex processes without expensive software or additional installations, adapting to any type of business."
+      "answer": "Because it is a universal, accessible and well-known tool. It allows automating complex processes without expensive software or additional installations, adapting to any type of business. It is also one of the certified software in Cuba to legally keep accounting records."
     },
     "q3": {
       "question": "Do you only use Excel?",
@@ -120,7 +120,7 @@
     },
     "q4": {
       "question": "Do I need an internet connection?",
-      "answer": "It depends on your requirements. If you need services that require remote connections, cross-platform applications, or shared environments, a reasonably stable connection may be necessary. However, there are solutions that do not need any type of connection and adapt very well to your needs."
+      "answer": "Our tools have been designed and developed to withstand connection issues. Most functionalities are available without needing internet. However, in specific cases where you need synchronization between multiple devices, centralized data, or cloud services, network access would be required."
     }
   },
   "contact": {
